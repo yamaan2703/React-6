@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Navbar Start */
+.navbar {
+    background-color: rgb(60, 89, 255) !important;    
+    background-attachment: fixed;
+}
+.navbar .navbar-brand {
+    color: aliceblue !important;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.navbar .nav-link{
+    color: white !important;
+    font-size: 18px;
+}
+.navbar .btn{
+    color: white;
+    border: 1px solid white;
+}
+.navbar .btn:hover{
+    background-color: white;
+    color: black;
+}
+/* Navbar Start */
+
+/* Button Start */
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid rgb(254, 254, 255);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(254, 254, 255);
+    margin: 30px 0px;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: rgb(254, 254, 255);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
+/* Button End */
+
+/* section-1 */
+.section-1 {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80);
+}
+.section-1 .shadow{
+    background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    position: relative;
+}
+.section-1 .main-heading {
+    color: white;
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    padding: 25px;
+}
+.section-1 .main-heading h1{
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section-1 .main-heading p{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Section 1 End  */
+
+/* Section 2 Start  */
+.section-2 .sec2-head h1{
+    font-size: 75px;
+    color: rgb(60, 89, 255);
+}
+.section-2 .about-text {
+    background-color: rgb(60, 89, 255);
+    padding: 25px;
+    margin: 10px 0px;
+    height: 100%;
+    color: white;
+    border-radius: 25px;
+}
+.section-2 .about-text h1{
+    margin: 15px 0px;
+}
+.section-2 .about-text p{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.section-2 .about-img img{
+    height: 100%;
+    border-radius: 25px;
+    margin: 30px 0px;
+}
+
+/* Section 2 End */
+
+/* Section 3 Start */
+.section-3 {
+    background-color: rgb(60, 89, 255);
+    margin: 0% !important;
+}
+.section-3 .sec3-head h1{
+    font-size: 75px;
+    color: rgb(225, 226, 235);
+
+}
+.product-card {
+    background-color: white;
+    color: rgb(60, 89, 255);
+    border-radius: 40px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+}
+.product-card p {
+    color: rgb(60, 89, 255) !important;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.product-card img {
+    width: 100%;
+    height: 300px;
+}
+.product-card button {
+    padding: 0.8em 1.8em;
+    border: 2px solid rgb(60, 89, 255);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(254, 254, 255);
+    margin: 20px 0px;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: rgb(254, 254, 255);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+/* Section 3 End */
+
+.main-det {
+    background-color: rgb(60, 89, 255);
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pro-details {
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px white;
+    background-color: white;
+}
+.pro-details span {
+    color: rgb(60, 89, 255);
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .section-1 .main-heading {
+        width: 100%;
+        left: 0%;
+    }
+    .section-1 .main-heading h1{
+        font-size: 35px;
+    }
+    .section-1 .main-heading p{
+        font-size: 16px;
+    }
+    .pro-details {
+        width: 100%;
+        margin: 5px;
+    }
+}
